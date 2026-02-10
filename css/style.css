@@ -88,10 +88,10 @@ margin-top: 0.25rem;
 
 /* スマホ */
 @media (max-width: 450px) {
-  .button-wrapper {
+  /* .button-wrapper {
     width: 18rem;
     height: 6rem;
-  }
+  } */
   .button-text-primary {
   font-size: 1em;
   }
@@ -2102,9 +2102,10 @@ margin-bottom: 0;
 
 @media (max-width: 450px) {
   .howto-description {
+    width: calc(100% - 2rem);
     text-align: justify;
-    margin: 0 0 1.2rem 0;
-    padding: 0 0.8rem;
+    /* margin: 0 0 1.2rem 0; */
+    padding: 0.8rem;
   }
 
   .button-wrapper {

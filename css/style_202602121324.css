@@ -575,43 +575,19 @@ height: 21px;
 }
 
 
-
 /* ==================================== */
 /* CSS for section section:OPEN HOUSE */
 /* ==================================== */
 #section-openhouse {
   width: 100%;
+  margin: 2rem 0 0 0;
 }
 
 .openhouse-container {
-  width: calc(100% - 3rem - 3rem);
   text-align: center;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
   }
-
-@media (max-width: 450px) {
-.openhouse-container {
-  width: calc(100% - 1rem - 1rem);
-  text-align: center;
-  margin: 0 auto;
-  }
-} 
-
-.openhouse-content {
-  color: #3d966c;
-  border: 2px solid #00a561;
-  border-radius: 2rem;
-  background-color: #fff;
-  margin: 4rem 0 1rem 0;
-  /* width: calc(100% - 3rem - 3rem); */
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 
 .openhouse-title {
   font-family: "Josefin Sans";
@@ -622,7 +598,7 @@ height: 21px;
   margin: 1rem 0 0 0;
 }
 
-/* .openhouse-text {
+.openhouse-subtitle {
   font-family: "Josefin Sans";
   font-size: 2.4em;
   font-weight: 340;
@@ -630,80 +606,21 @@ height: 21px;
   color: #3d966c;
   text-align: center;
   margin: 0.6rem 0 0.2rem 0;
-} */
-
-.schedule-text {
-  font-size: 1.6em;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  line-height: 1.3;
-  font-feature-settings: "palt";
 }
 
-/* Button Styles */
-.tour-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 24rem; 
-  height: 3.5rem;  
+.openhouse-content {
+  width: min(100%, 52rem);
+  color: #3d966c;
+  border: 2px solid #00a561;
+  border-radius: 2rem;
   background-color: #fff;
-  border: 2px solid #3d966c;   
-  border-radius: 3em;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0 1rem;
-  margin-bottom: 1rem;
-  box-shadow: none;
-  transition: all 0.2s;
-  color: #3d966c; 
-}
-
-@media (max-width: 450px) {
-.tour-btn {
-  max-width: 16rem; 
-}
-}
-
-.tour-btn:hover,
-.tour-btn:active {
-  background-color: #3d966c; 
-  color: #fffc;       
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  transform: translateY(-2px);
-}
-
-.tour-btn-text {
-  font-size: 1em;
-  letter-spacing: 0.02em;
-  font-weight: 400;
-  /* margin: 0 3rem 0 0; */
-}
-
-.tour-btn-icon {
-  position: relative;
-  width: 1.6875em;
-  height: 1.6875em;
+  margin: 4rem 0 2rem 0;
+  padding: 2rem;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.tour-icon-arrow {
-  width: 0; 
-  height: 0; 
-  border-top: 0.4375em solid transparent;
-  border-bottom: 0.4375em solid transparent;  
-  border-left: 0.625em solid #3d966c; 
-  position: relative;
-  z-index: 2;
-  left: 2px;
-}
-
-.tour-btn:hover .icon-arrow,
-.tour-btn:active .icon-arrow {
-  border-left: 0.625em solid #fff; 
+  text-align: center;
 }
 
 .tour-wrapper {
@@ -776,11 +693,9 @@ height: 21px;
 .tour-btn-openhouse {
   display: flex;
   align-items: center;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   max-width: 26.25rem; 
-  margin: 0 auto 1rem auto;
   height: 3.5rem;  
   background-color: #fff;
   border: 2px solid #3d966c;   
@@ -788,6 +703,7 @@ height: 21px;
   text-decoration: none;
   font-weight: 600;
   padding: 0 1rem;
+  margin-bottom: 1rem;
   box-shadow: none;
   transition: all 0.2s;
   color: #3d966c; 
@@ -802,18 +718,10 @@ height: 21px;
 }
 
 .tour-btn-text {
-  font-size: 1em;
-  letter-spacing: 0.02em;
-  font-weight: 400;
-}
-
-@media (max-width: 768px) {
-  .tour-btn-text {
-    font-size: 1.3em;
-    letter-spacing: 0.02em;
-    font-weight: 400;
-    margin: 0 !important;
-  }
+  font-size: 1.2em;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  margin: 0 0 0 4rem;
 }
 
 .tour-btn-icon {
@@ -859,43 +767,106 @@ letter-spacing: 0.1em;
 font-feature-settings: "palt";
 }
 
-/* スマホ (max-width: 450px) */
-@media (max-width: 450px) {
-  #section-openhouse .openhouse-content { 
-    width: calc(100% - 1rem - 1rem) !important;
-  }
-    #section-openhouse .schedule-text {
-    font-size: 1em;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    line-height: 1.3;
-    font-feature-settings: "palt" !important;
-  }
-  .tour-btn-openhouse {
-    width: 100% !important;
-    max-width: none !important;
-  }
-  .tour-btn-text {
-    margin: 0 !important;
-    font-size: 0.9em;
-    letter-spacing: 0.02em;
-    font-weight: 400;
-  }
-  .info-box-openhouse {
-    width: 90% !important;
-    margin: 1.2rem auto;
-  }
-} 
-
-/* PC・タブレット (min-width: 768px) */
+/* PC繝ｻ繧ｿ繝悶Ξ繝�ヨ */
 @media (min-width: 768px) {
-  #section-openhouse .openhouse-content {
-    max-width: 52rem;
-    width: 100%;
-    margin: 4rem auto;
+.tour-btn-text-openhouse {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.26em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    padding: 1rem 1rem 1rem 2.8rem;
+    margin: 0;
+    font-feature-settings: "palt";
   }
-  .schedule-text {
-    font-size: 1.4em; /* 外側の 1.6em に負けているなら数値を調整 */
+}
+
+/* 繧ｹ繝槭� */
+@media (max-width: 450px) {
+  .openhouse-container,
+  .openhouse-box,
+  .tour-time,
+  .tour-capacity {
+    width: 100%;
+    box-sizing: border-box;
+}
+  #section-openhouse {
+    box-sizing: border-box;
+    margin: 1rem;
+}
+  .openhouse-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+}
+  .openhouse-title {
+    padding: 1rem;
+}
+  .openhouse-subtitle {
+    font-size: 1.9em;
+    margin: 0 0 0.2rem 0;
+}
+  .tour-wrapper {
+    width: 100%;
+}
+  .tour-time span {
+    display: block;  
+    padding: 0.2rem 0;
+}
+  .tour-time span {
+    display: block;          
+}
+  .tour-btn-openhouse {
+    width: 100%;
+    max-width: 18rem;
+    margin: 0.6rem 0 0 0;
+    box-sizing: border-box;
+}
+  .tour-btn-icon {
+    position: relative;
+    width: 1.3em;
+    height: 1.6875em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .tour-icon-arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 0.4375em solid transparent;
+    border-bottom: 0.4375em solid transparent;  
+    border-left: 0.625em solid #3d966c; 
+    position: relative;
+    z-index: 2;
+    left: 0.6rem;
+}
+  .tour-btn:hover .icon-arrow,
+  .tour-btn:active .icon-arrow {
+    border-left: 0.625em solid #fff; 
+}
+  .info-box-openhouse {
+    width: 20rem;
+    height: auto;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 1px solid rgba(61,150,108,0.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin: 1.2rem 0 0 0;
+}
+  .tour-btn-text-openhouse {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 1rem;
+    margin: 0;
+    font-feature-settings: "palt";
   }
 }
 
@@ -1041,16 +1012,15 @@ font-feature-settings: "palt";
 }
 
 .points-container {
-  width: calc(100% - 15rem);
-  margin: 0 auto; 
+  width: calc(100% - 22rem);
   display: flex;
   flex-direction: row;
   gap: 3rem;
 }
 
 @media (max-width: 760px) {
-.points-container {
-  width: calc(100% - 6rem);
+#section-three-points .points-container {
+  width: calc(100% - 3rem - 3rem);
   margin: 0 auto; 
   display: flex;
   flex-direction: row;
@@ -1911,12 +1881,17 @@ letter-spacing: 0.05em;
 
 /* Timeline */
 .flow-timeline-wrapper {
-width: 400px;
+width: 600px;
 padding: 2rem 0 2rem 0;
 text-align: left;
 box-sizing: border-box;
 }
 
+@media (max-width: 450px) {
+  #section-flow .flow-timeline-wrapper {
+    width: calc(100% - 1rem - 1rem);    
+  }
+}
 .step-content-flow {
 flex: 1;
 margin: 0 0 3rem 1rem;
@@ -2010,11 +1985,6 @@ padding: 1.25rem 0.9rem;
 
 /* スマホ */
 @media (max-width: 450px) {
-  .flow-timeline-wrapper {
-    width: 100%;       
-    max-width: 100%;
-    padding: 2rem 0;
-  }
   .step-content-flow {
     flex: 1;
     margin: 0 0 3rem 0;

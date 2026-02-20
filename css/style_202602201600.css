@@ -866,7 +866,7 @@ font-feature-settings: "palt";
     font-size: 0.9em;
     font-weight: 600;
     letter-spacing: 0.08em;
-    padding: 1rem;
+    padding: 0 0.6rem 0.1rem 0.6rem;
     margin: 0;
     font-feature-settings: "palt";
   }

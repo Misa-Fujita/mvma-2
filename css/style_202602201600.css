@@ -609,7 +609,7 @@ height: 21px;
 }
 
 .openhouse-content {
-  width: 88vw;
+  width: 58vw;
   color: #3d966c;
   border: 2px solid #00a561;
   border-radius: 2rem;
@@ -623,15 +623,12 @@ height: 21px;
   text-align: center;
 }
 
-/* @media (max-width: 450px) { 
+@media (max-width: 450px) { 
   .openhouse-content {
-    width: 100%;
-    max-width: 100%;
-    margin: 1rem 0;
-    padding: 1.5rem 0;
-    box-sizing: border-box;
+    margin: 0.6rem 0;
+    width: 90vw;
   }
-} */
+}
 
 .tour-wrapper {
   width: calc(100% - 1rem);
